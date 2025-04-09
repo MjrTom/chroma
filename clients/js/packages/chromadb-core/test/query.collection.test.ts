@@ -230,4 +230,38 @@ describe("query records", () => {
       await collection.query({ queryEmbeddings: [1, 2, 3] });
     }).rejects.toThrow(ChromaNotFoundError);
   });
+
+  test("it should query a collection with specific IDs", async () => {
+    const collection = await client.createCollection({
+      name: "test",
+      embeddingFunction: new TestEmbeddingFunction(),
+    });
+    await collection.add({
+      ids: IDS,
+      embeddings: EMBEDDINGS,
+      metadatas: METADATAS,
+      documents: DOCUMENTS,
+    });
+
+    const results = await collection.query({
+      queryEmbeddings: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      nResults: 3,
+      ids: ["test1", "test3"],
+    });
+
+    expect(results).toBeDefined();
+    expect(results.ids[0]).toHaveLength(2);
+    expect(results.ids[0]).toEqual(expect.arrayContaining(["test1", "test3"]));
+    expect(results.ids[0]).not.toContain("test2");
+
+    expect(results.documents[0]).toEqual(
+      expect.arrayContaining(["This is a test", "This is a third test"]),
+    );
+    expect(results.metadatas[0]).toEqual(
+      expect.arrayContaining([
+        { test: "test1", float_value: -2 },
+        { test: "test3", float_value: 2 },
+      ]),
+    );
+  });
 });
