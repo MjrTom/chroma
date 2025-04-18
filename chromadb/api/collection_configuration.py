@@ -331,6 +331,7 @@ def load_create_collection_configuration_from_json(
 def create_collection_configuration_to_json_str(
     config: CreateCollectionConfiguration,
 ) -> str:
+    print(config)
     """Convert a CreateCollection configuration to a JSON-serializable string"""
     return json.dumps(create_collection_configuration_to_json(config))
 
@@ -377,6 +378,25 @@ def create_collection_configuration_to_json(
                 "config": ef.get_config(),
             }
             register_embedding_function(type(ef))  # type: ignore
+            print(hnsw_config)
+            if hnsw_config is not None and hnsw_config.get("space") is None:
+                try:
+                    hnsw_config["space"] = ef.default_space()
+                except Exception:
+                    warnings.warn(
+                        f"default_space not supported for {ef.name()}",
+                        DeprecationWarning,
+                        stacklevel=2,
+                    )
+            if spann_config is not None and spann_config.get("space") is None:
+                try:
+                    spann_config["space"] = ef.default_space()
+                except Exception:
+                    warnings.warn(
+                        f"default_space not supported for {ef.name()}",
+                        DeprecationWarning,
+                        stacklevel=2,
+                    )
     except Exception as e:
         warnings.warn(
             f"legacy embedding function config: {e}",
