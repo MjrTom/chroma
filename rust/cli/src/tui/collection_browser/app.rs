@@ -40,6 +40,7 @@ pub struct App {
     pub expand_scroll: u16,
     pub query_editor: QueryEditor,
     pub query_table_state: TableState,
+    pub load_batch: bool,
     pub width: u16,
     pub exit: bool,
 }
@@ -49,6 +50,7 @@ impl App {
         Self {
             collection,
             loading: true,
+            load_batch: false,
             initialized: false,
             error: None,
             current_screen: Screen::Main,
@@ -69,7 +71,10 @@ impl App {
             KeyCode::Char('q') | KeyCode::Esc => {
                 self.exit = true;
             }
-            KeyCode::Down => Self::next_row(&mut self.table_state, &self.records),
+            KeyCode::Down => {
+                Self::next_row(&mut self.table_state, &self.records);
+                self.load_batch = self.load_more_records()
+            },
             KeyCode::Up => Self::previous_row(&mut self.table_state, &self.records),
             KeyCode::Left => Self::previous_column(&mut self.table_state),
             KeyCode::Right => Self::next_column(&mut self.table_state),
@@ -275,6 +280,7 @@ impl App {
             let (collection, offset, collection_size, table_state) = {
                 let mut app = app_clone.lock().await;
                 app.loading = true;
+                app.load_batch = false;
                 (
                     app.collection.clone(),
                     app.records.len() as u32,
@@ -336,11 +342,11 @@ impl App {
 
         let threshold = self.records.len() * 3 / 4;
         if self.table_state.selected().unwrap_or(0) >= threshold
-            && self.records.len() < self.collection_size as usize
+            && self.records.len() <= self.collection_size as usize
         {
             return true;
         }
-
+        
         false
     }
 

@@ -72,7 +72,7 @@ impl CollectionBrowser {
             let (should_load_more, initialize, submit_query) = {
                 let mut app = self.app.lock().await;
                 (
-                    app.load_more_records(),
+                    app.load_batch,
                     !app.initialized,
                     app.current_screen == Screen::SearchResults && app.loading,
                 )
