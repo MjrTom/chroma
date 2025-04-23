@@ -1,6 +1,6 @@
 module github.com/chroma-core/chroma/go
 
-go 1.21
+go 1.21.0
 
 require (
 	ariga.io/atlas-provider-gorm v0.3.1
