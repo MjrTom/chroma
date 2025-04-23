@@ -40,7 +40,7 @@ chrono = { version = "0.4", features = ["serde"] }
 clap = { version = "4", features = ["derive"] }
 criterion = { version = "0.5", features = ["async_tokio"] }
 figment = { version = "0.10.12", features = ["env", "yaml", "test"] }
-flatbuffers = "24.3.25"
+flatbuffers = "24.12.23"
 futures = "0.3"
 futures-core = "0.3"
 lazy_static = { version = "1.4" }
