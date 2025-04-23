@@ -6,7 +6,11 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directories:
+      - "/clients/js/"
+      - "/docs/docs.trychroma.com/"
+      - "/examples/use_with/cohere/"
+      - "/rust/js_bindings/"
     schedule:
       interval: "monthly"
     open-pull-requests-limit: 1300
@@ -16,7 +20,7 @@ updates:
       interval: "monthly"
     open-pull-requests-limit: 150
   - package-ecosystem: "gomod" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "/go/" # Location of package manifests
     schedule:
       interval: "monthly"
     open-pull-requests-limit: 160
