@@ -6,7 +6,7 @@ edition = "2021"
 [dependencies]
 axum = { workspace = true }
 arboard = "3.5.0"
-clap = { version = "4.5.28", features = ["derive"] }
+clap = { version = "4.5.37", features = ["derive"] }
 chroma-frontend = { workspace = true }
 chroma-config = { workspace = true }
 chroma-system = { workspace = true }
