@@ -29,7 +29,7 @@ chroma-error = { workspace = true, features = ["tonic", "validator"] }
 chroma-config = { workspace = true }
 
 [build-dependencies]
-tonic-build = "0.10"
+tonic-build = "0.13"
 
 [features]
 testing = ["dep:proptest", "dep:proptest-derive"]
