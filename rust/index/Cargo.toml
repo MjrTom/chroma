@@ -36,7 +36,7 @@ rayon = { workspace = true }
 criterion = { workspace = true }
 chroma-benchmark = { workspace = true }
 proptest = { workspace = true }
-indicatif = "0.17.9"
+indicatif = "0.17.11"
 anyhow = "1.0.98"
 [target.'cfg(not(target_env = "msvc"))'.dependencies]
 tikv-jemallocator = "0.6"
