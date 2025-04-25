@@ -10,7 +10,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/pingcap/log v1.1.0
 	github.com/rs/zerolog v1.31.0
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.9.1
 	github.com/stretchr/testify v1.10.0
 	github.com/testcontainers/testcontainers-go v0.29.1
 	github.com/testcontainers/testcontainers-go/modules/postgres v0.29.1
@@ -119,7 +119,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/spaolacci/murmur3 v1.1.0
-	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/pflag v1.0.6 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/crypto v0.36.0 // indirect
