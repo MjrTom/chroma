@@ -3001,9 +3001,9 @@ dependencies = [
 
 [[package]]
 name = "foyer"
-version = "0.15.3"
+version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cb3b4e79fe76576b3970ada6437b30bee8cefe28685535290c3188d9b79b981e"
+checksum = "59819ed1a4be90fe66aa13df94adff2365bbb94929ad1052fd977e06b478974e"
 dependencies = [
  "ahash",
  "anyhow",
@@ -3013,7 +3013,7 @@ dependencies = [
  "foyer-memory",
  "foyer-storage",
  "madsim-tokio",
- "mixtrics 0.0.4",
+ "mixtrics 0.0.6",
  "pin-project",
  "serde",
  "tokio",
@@ -3022,9 +3022,9 @@ dependencies = [
 
 [[package]]
 name = "foyer-common"
-version = "0.15.3"
+version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9e71666dc1f66539cc9a21668fa59d11dbf9e1fd7cb9048d3e2293e28080f5d0"
+checksum = "06d425cd90d221e1c2cad27717260414cc1d55fa325fd8d02bbd928e4930d7d8"
 dependencies = [
  "ahash",
  "bytes",
@@ -3032,10 +3032,10 @@ dependencies = [
  "fastrace",
  "itertools 0.14.0",
  "madsim-tokio",
- "mixtrics 0.0.4",
+ "mixtrics 0.0.6",
  "parking_lot",
  "pin-project",
- "serde",
+ "thiserror 2.0.12",
  "tokio",
 ]
 
@@ -3050,9 +3050,9 @@ dependencies = [
 
 [[package]]
 name = "foyer-memory"
-version = "0.15.3"
+version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5e9332460864db122775ef95b0603562288674daad7a8df0add81adaca7e5e09"
+checksum = "fd2582199b44afa6f617464335cc50debdff3caaf9a93972369bbf7e42cc630d"
 dependencies = [
  "ahash",
  "arc-swap",
@@ -3065,7 +3065,7 @@ dependencies = [
  "hashbrown 0.15.2",
  "itertools 0.14.0",
  "madsim-tokio",
- "mixtrics 0.0.4",
+ "mixtrics 0.0.6",
  "parking_lot",
  "pin-project",
  "serde",
@@ -3076,16 +3076,15 @@ dependencies = [
 
 [[package]]
 name = "foyer-storage"
-version = "0.15.3"
+version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cfae1b6d15d65c014e72047939fcf937f964582c6561942e736fc5dec1fc8c3c"
+checksum = "ba8dbd31e2caa79d3816b6924c30cc7eb292eac731d8a2af9c59bec911c27924"
 dependencies = [
  "ahash",
  "allocator-api2",
  "anyhow",
  "array-util",
  "auto_enums",
- "bincode",
  "bytes",
  "clap",
  "equivalent",
@@ -3105,7 +3104,6 @@ dependencies = [
  "paste",
  "pin-project",
  "rand 0.9.0",
- "serde",
  "thiserror 2.0.12",
  "tokio",
  "tracing",
@@ -4836,9 +4834,9 @@ dependencies = [
 
 [[package]]
 name = "mixtrics"
-version = "0.0.4"
+version = "0.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "285f6f175bfc4a068c0aa66d1fc48b6f4af0193d9577f8a86fa3a80014be9321"
+checksum = "41434672bd2f5df1b8ed58e0cee0a7a1000bf8dd711cea5a5540afcf41f7d7fb"
 dependencies = [
  "itertools 0.14.0",
  "parking_lot",
