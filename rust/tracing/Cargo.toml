@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 fastrace = "0.7.9"
-fastrace-opentelemetry = "0.8"
+fastrace-opentelemetry = "0.10"
 http = { version = "1", optional = true }
 opentelemetry = { workspace = true }
 opentelemetry-otlp = { workspace = true }
