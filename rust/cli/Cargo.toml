@@ -28,7 +28,7 @@ thiserror = { workspace = true }
 tempfile = { workspace = true }
 tokio = { workspace = true }
 toml = "0.8.20"
-webbrowser = "1.0.3"
+webbrowser = "1.0.4"
 strum = "0.27.1"
 strum_macros = "0.27.1"
 semver = "1.0.26"
