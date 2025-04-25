@@ -45,7 +45,7 @@ futures = "0.3"
 futures-core = "0.3"
 lazy_static = { version = "1.4" }
 num_cpus = "1.16.0"
-opentelemetry = { version = "0.27.0", default-features = false, features = ["trace", "metrics"] }
+opentelemetry = { version = "0.29.1", default-features = false, features = ["trace", "metrics"] }
 opentelemetry-otlp = { version = "0.27", features = ["http-proto"] }
 opentelemetry-http = { version = "0.27", features = ["reqwest"] }
 opentelemetry_sdk = { version = "0.27", features = ["rt-tokio"] }
