@@ -83,7 +83,7 @@ tower-http = { version = "0.6.2", features = ["trace", "cors"] }
 bytemuck = "1.21.0"
 rayon = "1.10.0"
 validator = { version = "0.19", features = ["derive"] }
-rust-embed = { version = "8.5.0", features = ["include-exclude", "debug-embed"] }
+rust-embed = { version = "8.7.0", features = ["include-exclude", "debug-embed"] }
 hnswlib = { version = "0.8.1", git = "https://github.com/chroma-core/hnswlib.git" }
 reqwest = { version = "0.12.15",  features = ["rustls-tls-native-roots", "http2"], default-features = false }
 random-port = "0.1.1"
