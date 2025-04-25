@@ -4,7 +4,7 @@ go 1.21.0
 toolchain go1.24.1
 
 require (
-	ariga.io/atlas-provider-gorm v0.3.1
+	ariga.io/atlas-provider-gorm v0.5.1
 	github.com/aws/aws-sdk-go v1.55.5
 	github.com/docker/go-connections v0.5.0
 	github.com/google/uuid v1.6.0
@@ -26,7 +26,7 @@ require (
 	go.uber.org/zap v1.27.0
 	google.golang.org/grpc v1.65.0
 	google.golang.org/protobuf v1.36.5
-	gorm.io/gorm v1.25.7
+	gorm.io/gorm v1.25.12
 	gorm.io/plugin/opentelemetry v0.1.4
 	k8s.io/apimachinery v0.33.0
 	k8s.io/client-go v0.28.3
@@ -58,7 +58,7 @@ require (
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
-	github.com/microsoft/go-mssqldb v1.6.0 // indirect
+	github.com/microsoft/go-mssqldb v1.7.2 // indirect
 	github.com/moby/patternmatcher v0.6.0 // indirect
 	github.com/moby/sys/sequential v0.5.0 // indirect
 	github.com/moby/sys/user v0.3.0 // indirect
@@ -81,14 +81,14 @@ require (
 	golang.org/x/exp v0.0.0-20230510235704-dd950f8aeaea // indirect
 	golang.org/x/sync v0.12.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20240701130421-f6361c86f094 // indirect
-	gorm.io/driver/mysql v1.5.2 // indirect
-	gorm.io/driver/sqlite v1.5.4 // indirect
-	gorm.io/driver/sqlserver v1.5.2 // indirect
+	gorm.io/driver/mysql v1.5.7 // indirect
+	gorm.io/driver/sqlite v1.5.7 // indirect
+	gorm.io/driver/sqlserver v1.5.4 // indirect
 	sigs.k8s.io/randfill v1.0.0 // indirect
 )
 
 require (
-	ariga.io/atlas-go-sdk v0.2.3 // indirect
+	ariga.io/atlas-go-sdk v0.6.8 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/emicklei/go-restful/v3 v3.11.0 // indirect
 	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
@@ -112,7 +112,7 @@ require (
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
-	github.com/mattn/go-sqlite3 v1.14.17 // indirect
+	github.com/mattn/go-sqlite3 v1.14.22 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
@@ -133,7 +133,7 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	gorm.io/driver/postgres v1.5.2
+	gorm.io/driver/postgres v1.5.11
 	k8s.io/api v0.32.3
 	k8s.io/klog/v2 v2.130.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20250318190949-c8a335a9a2ff // indirect
