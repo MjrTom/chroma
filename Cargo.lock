@@ -1621,7 +1621,7 @@ dependencies = [
  "opentelemetry 0.29.1",
  "opentelemetry-http",
  "opentelemetry-otlp",
- "opentelemetry_sdk",
+ "opentelemetry_sdk 0.27.0",
  "reqwest 0.12.15",
  "serde",
  "serde_json",
@@ -1832,7 +1832,7 @@ dependencies = [
  "futures",
  "opentelemetry 0.29.1",
  "opentelemetry-otlp",
- "opentelemetry_sdk",
+ "opentelemetry_sdk 0.27.0",
  "parking_lot",
  "prost 0.13.5",
  "sea-query",
@@ -1880,7 +1880,7 @@ dependencies = [
  "http 1.1.0",
  "opentelemetry 0.29.1",
  "opentelemetry-otlp",
- "opentelemetry_sdk",
+ "opentelemetry_sdk 0.27.0",
  "serde",
  "serde_json",
  "tokio",
@@ -2862,15 +2862,15 @@ dependencies = [
 
 [[package]]
 name = "fastrace-opentelemetry"
-version = "0.8.0"
+version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3e7c6fae8a99c959de8eb2268a70a28ab738a5a379371265ca2e120989bdad80"
+checksum = "1c1cc020aea54a15f53ca1d4e42321d40f9e767f42d222ea1fdbe9c43ea49d15"
 dependencies = [
  "fastrace",
- "futures",
  "log",
- "opentelemetry 0.27.1",
- "opentelemetry_sdk",
+ "opentelemetry 0.29.1",
+ "opentelemetry_sdk 0.29.0",
+ "pollster",
 ]
 
 [[package]]
@@ -5329,6 +5329,7 @@ dependencies = [
  "js-sys",
  "pin-project-lite",
  "thiserror 2.0.4",
+ "tracing",
 ]
 
 [[package]]
@@ -5356,7 +5357,7 @@ dependencies = [
  "opentelemetry 0.27.1",
  "opentelemetry-http",
  "opentelemetry-proto",
- "opentelemetry_sdk",
+ "opentelemetry_sdk 0.27.0",
  "prost 0.13.5",
  "thiserror 1.0.69",
  "tokio",
@@ -5371,7 +5372,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a6e05acbfada5ec79023c85368af14abd0b307c015e9064d249b2a950ef459a6"
 dependencies = [
  "opentelemetry 0.27.1",
- "opentelemetry_sdk",
+ "opentelemetry_sdk 0.27.0",
  "prost 0.13.5",
  "tonic",
 ]
@@ -5396,6 +5397,21 @@ dependencies = [
  "tokio",
  "tokio-stream",
  "tracing",
+]
+
+[[package]]
+name = "opentelemetry_sdk"
+version = "0.29.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "afdefb21d1d47394abc1ba6c57363ab141be19e27cc70d0e422b7f303e4d290b"
+dependencies = [
+ "futures-channel",
+ "futures-executor",
+ "futures-util",
+ "opentelemetry 0.29.1",
+ "percent-encoding",
+ "rand 0.9.0",
+ "thiserror 2.0.4",
 ]
 
 [[package]]
@@ -5756,6 +5772,12 @@ dependencies = [
  "flate2",
  "miniz_oxide 0.8.0",
 ]
+
+[[package]]
+name = "pollster"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2f3a9f18d041e6d0e102a0a46750538147e5e8992d3b4873aaafee2520b00ce3"
 
 [[package]]
 name = "portable-atomic"
@@ -8350,7 +8372,7 @@ dependencies = [
  "js-sys",
  "once_cell",
  "opentelemetry 0.27.1",
- "opentelemetry_sdk",
+ "opentelemetry_sdk 0.27.0",
  "smallvec",
  "tracing",
  "tracing-core",
@@ -9377,7 +9399,7 @@ dependencies = [
  "num_cpus",
  "opentelemetry 0.29.1",
  "opentelemetry-otlp",
- "opentelemetry_sdk",
+ "opentelemetry_sdk 0.27.0",
  "parking_lot",
  "proptest",
  "proptest-state-machine",
