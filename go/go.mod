@@ -30,7 +30,7 @@ require (
 	gorm.io/plugin/opentelemetry v0.1.4
 	k8s.io/apimachinery v0.33.0
 	k8s.io/client-go v0.28.3
-	pgregory.net/rapid v1.1.0
+	pgregory.net/rapid v1.2.0
 )
 
 require (
