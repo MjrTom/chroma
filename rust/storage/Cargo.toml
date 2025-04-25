@@ -8,7 +8,7 @@ path = "src/lib.rs"
 
 [dependencies]
 bytes = "1.8.0"
-aws-sdk-s3 = "1.63"
+aws-sdk-s3 = "1.64"
 aws-smithy-types = "1.2"
 aws-config = { version = "1.5", features = ["behavior-version-latest"] }
 object_store = { version = "0.12", features = ["aws"] }
