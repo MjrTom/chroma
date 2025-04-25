@@ -1431,7 +1431,7 @@ dependencies = [
  "chroma-types",
  "clap",
  "foyer",
- "mixtrics",
+ "mixtrics 0.1.0",
  "opentelemetry 0.29.1",
  "parking_lot",
  "serde",
@@ -3010,7 +3010,7 @@ dependencies = [
  "foyer-memory",
  "foyer-storage",
  "madsim-tokio",
- "mixtrics",
+ "mixtrics 0.0.4",
  "pin-project",
  "serde",
  "tokio",
@@ -3029,7 +3029,7 @@ dependencies = [
  "fastrace",
  "itertools 0.14.0",
  "madsim-tokio",
- "mixtrics",
+ "mixtrics 0.0.4",
  "parking_lot",
  "pin-project",
  "serde",
@@ -3062,7 +3062,7 @@ dependencies = [
  "hashbrown 0.15.2",
  "itertools 0.14.0",
  "madsim-tokio",
- "mixtrics",
+ "mixtrics 0.0.4",
  "parking_lot",
  "pin-project",
  "serde",
@@ -4802,6 +4802,16 @@ name = "mixtrics"
 version = "0.0.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "285f6f175bfc4a068c0aa66d1fc48b6f4af0193d9577f8a86fa3a80014be9321"
+dependencies = [
+ "itertools 0.14.0",
+ "parking_lot",
+]
+
+[[package]]
+name = "mixtrics"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "749ed12bab176c8a42c13a679dd2de12876d5ad4abe7525548e31ae001a9ebbf"
 dependencies = [
  "itertools 0.14.0",
  "opentelemetry 0.27.1",
