@@ -74,7 +74,7 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 uuid = { version = "1.16.0", features = ["v4", "fast-rng", "macro-diagnostics", "serde"] }
 utoipa = { version = "5.0.0", features = ["macros", "axum_extras", "debug", "uuid"] }
 sqlx = { version = "0.8.5", features = ["runtime-tokio", "sqlite"] }
-sha2 = "0.10.8"
+sha2 = "0.10.9"
 md5 = "0.7.0"
 regex = "1.11.1"
 pyo3 = { version = "0.23.5", features = ["abi3-py39"] }
