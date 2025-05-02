@@ -27,7 +27,7 @@ uuid = { workspace = true }
 dirs = "6.0.0"
 reqwest = { workspace = true, features = ["stream"] }
 tokio-stream = { version = "0.1.17", features = ["full"] }
-tokio-util = "0.7.14"
+tokio-util = "0.7.15"
 bloom = "0.3.2"
 
 chroma-blockstore = { workspace = true }
